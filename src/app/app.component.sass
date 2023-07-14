@@ -1,0 +1,122 @@
+// Reset CSS (https://meyerweb.com/eric/tools/css/reset/)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+//==========================================================
+// The actual style code begins here
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap')
+
+$dark-green: #0a6f25
+$medium-green: #64c47e
+$light-green: #a4f5b9
+$gray: #d3d3d3
+$light-gray: #e4e4e4
+$white: white
+
+.banner
+	display: flex
+	justify-content: center
+	align-items: center
+	min-height: 300px
+	filter: grayscale(30%)
+
+.filter
+	background-position: center
+	background-size: cover !important
+	background-image: linear-gradient(rgba(0, 41, 58, 0.7), rgba(0, 34, 39, 0.8))
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: -1
+
+.image
+	background-position: center
+	background-size: cover !important
+	background: url("../assets/LNUP-photo.jpeg") center center
+	filter: grayscale(50%)
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: -2
+
+.title p
+	text-align: center
+	color: white
+	font-weight: 600
+	text-transform: uppercase
+
+.vstup-title
+	letter-spacing: 2px
+	font-size: 32pt
+
+.uni-name
+	letter-spacing: 2px
+	font-family: 'Roboto Mono', monospace !important
+	font-size: 14pt
+	margin-top: 8px
+
+.separator
+	margin: 26px 20%
+	border-radius: 3px
+	height: 6px
+	background: $dark-green
+
+section
+	margin: 26px 20%
+	border-radius: 3px
+
+.button
+	font-size: 12pt
+	border: 2px solid $dark-green
+	padding: 10px
+	color: $dark-green
+
+.icon
+	width: 48px
+	height: 48px
