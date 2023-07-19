@@ -49,10 +49,10 @@ table
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto&display=swap')
 
 $dark-green: #0a6f25
-$medium-green: #64c47e
-$light-green: #a4f5b9
-$gray: #d3d3d3
-$light-gray: #e4e4e4
+$medium-green: #2a8f45
+$light-green: #31a550
+$gray: #bdbdbd
+$light-gray: #ebebeb
 $white: white
 
 .banner
@@ -101,24 +101,82 @@ $white: white
 	font-size: 14pt
 	margin-top: 8px
 
-.separator
-	margin: 26px 20%
-	border-radius: 3px
-	height: 2px
-	background: $dark-green
+@media only screen and (max-width: 480px)
+	.contents
+		margin: 52px 5% 26px 5% !important
+	.footer-inner
+		margin: 0 5% !important
+	.footer-inner .column
+		display: inline !important	
+	.links .button
+		padding: 16px !important
+		display: block !important
+		width: auto !important
+	.links
+		border-spacing: 16px !important
+	#info-link:not(#info-link:last-of-type)
+		margin-bottom: 16px !important
+	#rules
+		display: block !important
+	section
+		margin-bottom: 32px !important
 
-section
-	margin: 26px 20%
-	border-radius: 3px
+@media only screen and (min-width: 481px) and (max-width: 790px)
+	.contents
+		margin: 52px 7% 26px 7% !important
+	.footer-inner
+		margin: 0 7% !important
+	.footer-inner .column
+		display: inline !important
+	.links .button
+		padding: 24px !important
+		display: block !important
+		width: auto !important
+	.links
+		border-spacing: 24px !important
+	#info-link:not(#info-link:last-of-type)
+		margin-bottom: 24px !important
+	#rules
+		display: table !important
+	section
+		margin-bottom: 42px !important
+
+@media only screen and (min-width: 791px)
+	.contents
+		margin: 52px 10% 26px 10% !important
+	.footer-inner
+		margin: 0 10% !important
+	.footer-inner .column
+		display: table-cell !important
+	.links .button
+		padding: 32px !important
+		display: table-cell !important
+		width: 2% !important
+	.links
+		border-spacing: 32px !important
+	#info-link:not(#info-link:last-of-type)
+		margin-bottom: 0 !important
+	#rules
+		display: table !important
+	section
+		margin-bottom: 52px !important
 
 .button
-	transition: all 0.4s ease-in-out
+	border-radius: 6px
+	vertical-align: middle
+	background-color: $white
+	cursor: pointer
+	transition: 0.4s ease-out
 	text-decoration: none
-	font-size: 12pt
+	font-size: 11pt
+	text-align: center
 	border: 2px solid $dark-green
-	padding: 10px
+	padding: 16px
 	color: $dark-green
 	display: inline-block
+	-webkit-user-select: none
+	-ms-user-select: none
+	user-select: none
 
 .button span
 	margin-left: 6px
@@ -131,15 +189,71 @@ section
 	vertical-align: middle
 	width: 32px
 	height: 32px
+	max-width: 32px
+	max-height: 32px
 
 .button:hover
+	box-shadow: 0 2px 8px $dark-green !important
 	background-color: $dark-green
-	transition: 0.3s
+	transition: 0.4s ease-out
 
 .button:hover span
 	color: $white
-	transition: 0.3s
+	transition: 0.4s ease-out
 
 .button:hover > .icon
 	fill: $white
-	transition: 0.3s
+	transition: 0.4s ease-out
+
+.introduction span
+	font-size: 14px
+	display: block
+	text-align: center
+	margin-bottom: 12px
+
+.introduction span:first-of-type
+	font-size: 16px
+	font-weight: 700
+
+section
+	background-color: $white
+	box-shadow: 4px 4px 12px $gray
+
+section h3
+	font-size: 14pt
+	text-align: center
+	display: block
+	margin: 0 auto
+	padding: 14px
+	color: $white
+	background-color: $dark-green
+
+.links
+	width: 100%
+	display: table
+	
+.links .button
+	font-size: 14pt
+	text-align: center
+	box-shadow: 4px 4px 6px $gray
+
+.links .button:hover
+	color: $white
+	background-color: $dark-green
+	transition: 0.4s ease-out
+
+footer
+	width: 100%
+	background-color: $dark-green
+
+.footer-inner
+	position: relative
+	display: table
+
+.footer-inner .column
+	width: auto
+	display: table-cell
+
+.column p, .column li
+	color: white
+	display: block
