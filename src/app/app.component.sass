@@ -105,7 +105,7 @@ $white: white
 	.contents
 		margin: 52px 5% 26px 5% !important
 	.footer-inner
-		margin: 0 5% !important
+		padding: 2% 5% !important
 	.footer-inner .column
 		display: inline !important	
 	.links .button
@@ -125,7 +125,7 @@ $white: white
 	.contents
 		margin: 52px 7% 26px 7% !important
 	.footer-inner
-		margin: 0 7% !important
+		padding: 3% 7% !important
 	.footer-inner .column
 		display: inline !important
 	.links .button
@@ -145,7 +145,7 @@ $white: white
 	.contents
 		margin: 52px 10% 26px 10% !important
 	.footer-inner
-		margin: 0 10% !important
+		padding: 5% 10% !important
 	.footer-inner .column
 		display: table-cell !important
 	.links .button
@@ -162,6 +162,8 @@ $white: white
 		margin-bottom: 52px !important
 
 .button
+	font-weight: 500
+	font-family: 'Roboto', sans-serif
 	border-radius: 6px
 	vertical-align: middle
 	background-color: $white
@@ -181,8 +183,7 @@ $white: white
 .button span
 	margin-left: 6px
 	vertical-align: middle
-	font-family: 'Roboto', sans-serif
-	font-weight: 700
+	font-weight: 700 !important
 
 .icon
 	fill: $dark-green
@@ -206,6 +207,7 @@ $white: white
 	transition: 0.4s ease-out
 
 .introduction span
+	font-family: 'Roboto', sans-serif
 	font-size: 14px
 	display: block
 	text-align: center
@@ -243,6 +245,7 @@ section h3
 	transition: 0.4s ease-out
 
 footer
+	font-family: 'Roboto', sans-serif
 	width: 100%
 	background-color: $dark-green
 
@@ -253,7 +256,31 @@ footer
 .footer-inner .column
 	width: auto
 	display: table-cell
+	padding: 16px
 
 .column p, .column li
 	color: white
 	display: block
+
+.website-info
+	margin-top: 24px
+	position: relative
+	display: table
+	width: 100%
+
+.website-info a
+	display: table-cell
+	vertical-align: middle
+	color: white
+	font-weight: 700
+	font-size: 13pt
+
+.website-info a:first-of-type
+	padding-left: 8px
+
+.website-info a:last-of-type
+	float: right
+
+.website-info img
+	width: 48px
+	height: 48px
