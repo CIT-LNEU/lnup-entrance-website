@@ -105,7 +105,7 @@ $white: white
 	.contents
 		margin: 52px 5% 26px 5% !important
 	.footer-inner
-		padding: 2% 5% !important
+		padding: 2% 5% 2% 5%!important
 	.footer-inner .column
 		display: inline !important	
 	.links .button
@@ -125,7 +125,7 @@ $white: white
 	.contents
 		margin: 52px 7% 26px 7% !important
 	.footer-inner
-		padding: 3% 7% !important
+		padding: 3% 7% 2% 7% !important
 	.footer-inner .column
 		display: inline !important
 	.links .button
@@ -145,7 +145,7 @@ $white: white
 	.contents
 		margin: 52px 10% 26px 10% !important
 	.footer-inner
-		padding: 5% 10% !important
+		padding: 5% 10% 3% 10% !important
 	.footer-inner .column
 		display: table-cell !important
 	.links .button
@@ -245,12 +245,13 @@ section h3
 	transition: 0.4s ease-out
 
 footer
+	position: relative
 	font-family: 'Roboto', sans-serif
 	width: 100%
 	background-color: $dark-green
 
 .footer-inner
-	position: relative
+	margin: 0 auto !important
 	display: table
 
 .footer-inner .column
@@ -265,21 +266,28 @@ footer
 .website-info
 	margin-top: 24px
 	position: relative
-	display: table
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	flex-wrap: wrap
 	width: 100%
 
-.website-info a
-	display: table-cell
-	vertical-align: middle
+.university-link a
+	margin: auto 0
+
+.university-link, .cit-link
 	color: white
 	font-weight: 700
 	font-size: 13pt
 
-.website-info a:first-of-type
-	padding-left: 8px
+.cit-link
+	margin: auto 0
 
-.website-info a:last-of-type
-	float: right
+.university-link
+	display: flex
+
+.university-link a
+	margin-left: 8px
 
 .website-info img
 	width: 48px
